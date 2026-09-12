@@ -126,6 +126,10 @@ app.use((req,res,next)=>{
 //     res.send(registeredUser);
 //   })
  app.use("/listings",listings);
+ app.get("/", (req, res) => {
+    res.redirect("/listings/");
+});
+
  app.use("/listings/:id/reviews",reviews)
  app.use("/",userRouter);
 
