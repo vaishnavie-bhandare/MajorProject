@@ -1,6 +1,8 @@
 // if(process.env.NODE_ENV !="production"){
 // require ("dotenv")
 // .config();}
+const dns = require("dns");
+dns.setServers(["8.8.8.8"]);
 require("dotenv").config();
 // console.log("ATLAS URL loaded:", !!process.env.ATLASDB_URL);
 
