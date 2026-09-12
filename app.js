@@ -11,7 +11,7 @@ const path=require("path");
 const Listing=require("./models/listing.js");
 const methodOverride=require("method-override");
 const ejsmate=require("ejs-mate");
-const { default: next } = require("next");
+
 const wrapAsync=require("./utils/wrapAsync.js");
 const ExpressError=require("./utils/ExpressError.js");
 const { listingSchema,reviewSchema }=require("./schema.js");
